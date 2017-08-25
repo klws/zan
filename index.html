@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./styles/reset.css">
+	<link rel="stylesheet" type="text/css" href="./styles/index.css">
+	
+</head>
+<body>
+	<div class="hand">
+		<div class="fingerTop"></div>
+		<div class="fingerBottom"></div>
+	</div>
+	<script type="text/javascript" src='./node_modules/systemjs/dist/system.js'></script>
+	<script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script type="text/javascript">
+		System.import('scripts/index.js').then(function(m) {
+		      $.fn.Thumb = m;
+		    });
+	</script>                                                    
+	</body>
+</html>

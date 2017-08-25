@@ -1,0 +1,108 @@
+/*my*/
+.hand{
+	padding: 193px 0 76px 184px;
+	width: 262px;
+	height: 150px;
+	cursor:pointer;
+	margin: auto;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom:0;
+	right: 0;
+}
+.fingerBottom{
+	width: 262px;
+	height:76px;
+	background: #f3c5ad;
+	border-top-right-radius: 38px;
+	border-bottom-right-radius: 38px;
+	position: relative;
+	border-right: 1px solid #8c3e15;
+}
+.fingerBottom::before{
+	content: " ";
+	position: absolute;
+	top: -76px;
+	width: 262px;
+	height:76px;
+	background: #f3c5ad;
+	border-top-right-radius: 38px;
+	border-bottom-right-radius: 38px;
+	border-right: 1px solid #8c3e15;
+}
+.fingerBottom::after{
+	content: " ";
+	position: absolute;
+	top: 76px;
+	width: 262px;
+	height:76px;
+	background: #f3c5ad;
+	border-top-right-radius: 38px;
+	border-bottom-right-radius: 38px;
+	border-bottom-left-radius: 38px;
+	border-bottom: 1px solid #8c3e15;
+	border-right: 1px solid #8c3e15;
+	border-left: 1px solid #8c3e15;
+}
+.fingerTop{
+	width: 262px;
+	height:76px;
+	background: #f3c5ad;
+	border-top-right-radius: 38px;
+	border-top-left-radius: 38px;
+	border-bottom-right-radius: 38px;
+	position: relative;
+	top: -76px;
+	border-top: 1px solid #8c3e15;
+	border-right: 1px solid #8c3e15;
+	border-left: 1px solid #8c3e15;
+	/*transition: all 2s;*/
+	/*box-shadow:-62px 0 0  white inset;  */
+}
+.fingerTop::before{
+	content: " ";
+	position: absolute;
+	width: 142px;
+	height: 82px;
+	left:20px;
+	background: #f3c5ad;
+	top:-76px;
+	border-top-right-radius: 38px;
+	border-bottom-right-radius: 38px;
+	transform: rotate(-60deg);
+	border-top: 1px solid #8c3e15;
+	border-right: 1px solid #8c3e15;
+	 box-shadow: -62px 0 0 rgba(248,224,211,0.9) inset;
+}
+.fingerTop::after{
+	content: " ";
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background: #f3c5ad;
+	left: -180px;
+	top: 50px;
+	z-index: 100;
+	box-sizing: border-box;
+	border-top: 1px solid #8c3e15;
+}
+.fingerTop p{
+	position: absolute;
+	right:0;
+	top:-150px;
+	text-align: right;
+	display: inline-block;
+	z-index: 101;
+	color:red;
+}
+.animateP{
+	transition: all 1s;
+	transform: scale(3);
+}
+
+.disappearP{
+	transition: all 1s;
+	opacity: 0;
+	transform: scale(1.5);
+}

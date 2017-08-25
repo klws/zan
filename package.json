@@ -1,0 +1,23 @@
+{
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-latest": "^6.24.1",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.0",
+    "karma-jasmine": "^1.1.0",
+    "karma-phantomjs-launcher": "^1.0.4"
+  },
+  "scripts": {
+    "build": "babel scripts -d ss"
+  },
+  "dependencies": {
+    "systemjs": "^0.20.18"
+  },
+  "name": "zan",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
